@@ -1,23 +1,26 @@
-# ETL Testing Framework – Snowflake + Informatica
+# ETL Data Validation: Snowflake + Informatica
 
-This project demonstrates ETL validation using:
-- **Snowflake**: Data warehouse for storing and querying data
-- **Informatica**: ETL pipeline
-- **Python + SQL**: For data comparison and validation
+An end-to-end ETL validation project using Snowflake and Informatica. This project includes mock data, ETL mappings, SQL validations, and automation scripts.
 
-## Features
-- Validates row count and field-level accuracy
-- Compares staging vs target tables using SQL
-- Generates test reports using PyTest and Allure
+## 📌 Features
+- Source and target schema setup in Snowflake
+- Data transformation via Informatica
+- Data validation with custom SQL scripts
+- Shell and Python automation
 
-## Technologies Used
-- Python, SQL
-- Snowflake Connector
-- Informatica Cloud
-- Jenkins (optional CI)
+## 🛠 Technologies
+- Snowflake
+- Informatica PowerCenter/Cloud
+- Python
+- Shell
 
-## Getting Started
-1. Clone this repo
-2. Add your Snowflake and Informatica credentials to `.env`
-3. Run `python etl_validator.py`
-<img width="468" height="301" alt="image" src="https://github.com/user-attachments/assets/5fd841d9-4751-4e97-ab0c-a59cc37846af" />
+## ✅ Validations
+- Row count comparison
+- Null checks
+- Referential integrity
+
+## 🚀 How to Use
+1. Set up tables using `snowflake/ddl`
+2. Load mock data using `data-mocks`
+3. Run Informatica mapping
+4. Execute SQL validations with `scripts/run_validation.sh`
